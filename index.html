@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda Online - Frutas y Verduras</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🍎 Tienda Online - Frutas y Verduras 🥦</h1>
+  </header>
+
+  <nav>
+    <a href="#frutas">Frutas</a>
+    <a href="#verduras">Verduras</a>
+    <a href="#promociones">Promociones</a>
+    <a href="#carrito">Carrito</a>
+  </nav>
+
+  <div class="container">
+    <section id="frutas">
+      <h2>Frutas</h2>
+      <div class="products">
+        <div class="product">
+          <img src="img/manzana.jpg" alt="Manzana">
+          <h3>Manzana</h3>
+          <p>Fresca y crocante. Precio: $4000/kg</p>
+          <input type="number" min="0.5" step="0.5" value="1" id="manzanaPeso"> kg
+          <button onclick="addToCart('Manzana', 4000, document.getElementById('manzanaPeso').value)">Agregar</button>
+        </div>
+        <div class="product">
+          <img src="img/naranja.jpeg" alt="Naranja">
+          <h3>Naranja</h3>
+          <p>Jugosa y natural. Precio: $3000/kg</p>
+          <input type="number" min="0.5" step="0.5" value="1" id="naranjaPeso"> kg
+          <button onclick="addToCart('Naranja', 3000, document.getElementById('naranjaPeso').value)">Agregar</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="verduras">
+      <h2>Verduras</h2>
+      <div class="products">
+        <div class="product">
+          <img src="img/brocoli.jpeg" alt="Brócoli">
+          <h3>Brócoli</h3>
+          <p>Ideal para la salud. Precio: $5000/kg</p>
+          <input type="number" min="0.5" step="0.5" value="1" id="brocoliPeso"> kg
+          <button onclick="addToCart('Brócoli', 5000, document.getElementById('brocoliPeso').value)">Agregar</button>
+        </div>
+        <div class="product">
+          <img src="img/zanahoria.jpeg" alt="Zanahoria">
+          <h3>Zanahoria</h3>
+          <p>Dulce y nutritiva. Precio: $2500/kg</p>
+          <input type="number" min="0.5" step="0.5" value="1" id="zanahoriaPeso"> kg
+          <button onclick="addToCart('Zanahoria', 2500, document.getElementById('zanahoriaPeso').value)">Agregar</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="promociones">
+      <h2>Promociones</h2>
+      <p>🌟 Combo saludable: 2kg de frutas surtidas + 1kg de verduras por $12,000 🌟</p>
+    </section>
+
+    <section id="carrito">
+      <h2>Carrito de Compras</h2>
+      <div class="cart" id="cart">
+        <h3>Tu carrito está vacío</h3>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
