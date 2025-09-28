@@ -3,22 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tienda Online - Frutas y Verduras</title>
+  <title>EcoFruver</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="img/logo.png">
 </head>
 <body>
   <header>
-    <h1>🍎 Tienda Online - Frutas y Verduras 🥦</h1>
+    <div class="logo">
+      <img src="img/logo.png" alt="EcoFruver Logo">
+    </div>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#frutas">Frutas</a>
+      <a href="#verduras">Verduras</a>
+      <a href="#promociones">Promociones</a>
+      <a href="#carrito">Carrito</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
   </header>
 
-  <nav>
-    <a href="#frutas">Frutas</a>
-    <a href="#verduras">Verduras</a>
-    <a href="#promociones">Promociones</a>
-    <a href="#carrito">Carrito</a>
-  </nav>
+  <section id="inicio" class="hero">
+    <h1>Bienvenido a EcoFruver</h1>
+    <p>Productos frescos del campo a tu mesa</p>
+  </section>
 
-  <div class="container">
+  <main class="container">
     <section id="frutas">
       <h2>Frutas</h2>
       <div class="products">
@@ -59,19 +68,35 @@
       </div>
     </section>
 
-    <section id="promociones">
+    <section id="promociones" class="promo">
       <h2>Promociones</h2>
       <p>🌟 Combo saludable: 2kg de frutas surtidas + 1kg de verduras por $12,000 🌟</p>
     </section>
 
     <section id="carrito">
-      <h2>Carrito de Compras</h2>
-      <div class="cart" id="cart">
-        <h3>Tu carrito está vacío</h3>
-      </div>
-    </section>
+  <h2>Carrito de Compras</h2>
+  <div class="cart" id="cart">
+    <h3>Tu carrito está vacío</h3>
   </div>
+  <button id="buyButton" onclick="buyNow()" style="display:none;">🛒 Comprar</button>
+</section>
+
+    <section id="contacto" class="contact">
+      <h2>Contáctanos</h2>
+      <p>Email: contacto@ecofruver.com</p>
+      <p>Teléfono: +57 000 000 000</p>
+    </section>
+
+    
+
+  </main>
+
+  <footer>
+    <img src="img/logo.png" alt="EcoFruver Logo" class="footer-logo">
+    <p>© 2025 EcoFruver - Todos los derechos reservados</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
 </html>
+
